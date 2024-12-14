@@ -38,7 +38,7 @@ function logMessage2(message: string): string { // 返り値あり
 let message = logMessage2('メッセージ')
 console.log(message)
 
-// 4.オブジェクト&&関数
+// 6.オブジェクト&&関数
 interface User {
   id: number;
   name: string;
