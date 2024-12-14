@@ -13,4 +13,19 @@ email = "user1@gmail.com";
 
 // 2.配列
 let numbers: number[] = [1, 2, 3, 4];
-console.log(numbers)
+// console.log(numbers)
+
+// 3.オブジェクト&&関数
+interface User {
+  id: number;
+  name: string;
+  email?: string; // オプショナルプロパティ
+}
+
+function userInfo(user: User): string {
+  const response = `id: ${user.id}, name: ${user.name}, email: ${user.email}`;
+  return response;
+}
+
+let user = { id: 1, name: "tanaka" };
+console.log(userInfo(user));
