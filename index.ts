@@ -21,10 +21,22 @@ let tuple: [string, number] = ["TypeScript", 2024];
 
 // 4.any型（なるべく避けるべき）
 let anything: any = "何でも入る";
-console.log(anything);
+// console.log(anything);
 
 anything = 42;
-console.log(anything);
+// console.log(anything);
+
+// 5.関数
+function logMessage1(message: string): void { // 返り値なし
+    console.log(message);
+}
+logMessage1('メッセージ')
+
+function logMessage2(message: string): string { // 返り値あり
+    return `メッセージは「${message}」です`
+}
+let message = logMessage2('メッセージ')
+console.log(message)
 
 // 4.オブジェクト&&関数
 interface User {
