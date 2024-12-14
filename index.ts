@@ -17,7 +17,14 @@ let numbers: number[] = [1, 2, 3, 4];
 
 // 3.タプル（固定された要素数と型）
 let tuple: [string, number] = ["TypeScript", 2024];
-console.log(tuple)
+// console.log(tuple);
+
+// 4.any型（なるべく避けるべき）
+let anything: any = "何でも入る";
+console.log(anything);
+
+anything = 42;
+console.log(anything);
 
 // 4.オブジェクト&&関数
 interface User {
