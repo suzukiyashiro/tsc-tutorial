@@ -15,7 +15,11 @@ email = "user1@gmail.com";
 let numbers: number[] = [1, 2, 3, 4];
 // console.log(numbers)
 
-// 3.オブジェクト&&関数
+// 3.タプル（固定された要素数と型）
+let tuple: [string, number] = ["TypeScript", 2024];
+console.log(tuple)
+
+// 4.オブジェクト&&関数
 interface User {
   id: number;
   name: string;
@@ -28,4 +32,4 @@ function userInfo(user: User): string {
 }
 
 let user = { id: 1, name: "tanaka" };
-console.log(userInfo(user));
+// console.log(userInfo(user));
